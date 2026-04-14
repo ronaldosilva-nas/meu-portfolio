@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { Menu } from '../models/menu';
+import { HeaderModel } from '../models/header';
 
 @Injectable({
   providedIn: 'root',
@@ -8,9 +8,9 @@ export class HeaderService {
   
   constructor() {}
 
-  getItems(): Array<Menu> {
+  getItems(): Array<HeaderModel> {
     
-    const menu: Array<Menu> = [
+    const menu: Array<HeaderModel> = [
       {
         name: 'Inicio',
         url: '#banner'

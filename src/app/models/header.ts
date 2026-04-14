@@ -1,4 +1,4 @@
-export class Menu {
+export class HeaderModel {
     name?: string;
     url?: string;
 }

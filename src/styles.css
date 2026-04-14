@@ -1,1 +1,69 @@
-/* You can add global styles to this file, and also import other style files */
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+:root {
+    font-size: 125%;
+    font-family: 'Josefin Sans', sans-serif;
+
+    --font-size-1: 2.25rem;
+    --font-size-2: 1.75rem;
+    --font-size-3: 1.25rem;
+    --font-size-4: 1rem;
+    --font-size-5: 0.75rem;
+
+    --background-color-1: #2f4f4f;
+
+    --color-blue-1: #00abf0;
+    
+    --color-black-1: #181818;
+}
+
+@media (min-width: 768px) {
+    :root {
+        --font-size-1: 2.8rem;  /* 56px */
+        --font-size-2: 2rem;  /* 40px */
+        --font-size-3: 1.5rem;  /* 30px */
+    }
+}  
+
+h1 {
+    font-size: var(--font-size-1)
+}
+
+h2 {
+    font-size: var(--font-size-2)
+}
+
+h3 {
+    font-size: var(--font-size-3)
+}
+
+a {
+    text-decoration: none;
+}
+
+p, a {
+    font-size: var(--font-size-4);
+    font-weight: 200;
+    color: var(--color-black-1)
+}
+
+.container {
+    padding: 40px 20px;
+}
+
+.container .box {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+@media (min-width: 768px) {
+    .container {
+        padding: 60px 40px;
+    }
+}
