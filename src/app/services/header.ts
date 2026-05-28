@@ -21,7 +21,7 @@ export class HeaderService {
       },
       {
         name: 'Habilidades',
-        url: '#skils'
+        url: '#skills'
       },
       {
         name: 'Projetos',

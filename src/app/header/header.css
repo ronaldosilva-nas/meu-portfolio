@@ -9,6 +9,12 @@ nav {
     height: 70px;
 }
 
+nav h1 {
+    font-size: var(--font-size-4);
+    color: var(--color-blue-1);
+    margin-right: auto;
+}
+
 nav ul {
     display: flex;
     flex-direction: column;
@@ -35,6 +41,7 @@ nav ul li {
 
 nav ul li a {
     font-size: var(--font-size-5);
+    font-weight: 400;
 }
 
 nav ul li a:hover {
@@ -51,6 +58,12 @@ nav i {
 
     nav {
         justify-content: center;
+    }
+
+    nav h1 {
+        font-size: var(--font-size-4);
+        color: var(--color-blue-1);
+        padding-left: 250px;
     }
 
     nav ul.open,

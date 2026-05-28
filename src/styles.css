@@ -9,6 +9,7 @@
 :root {
     font-size: 125%;
     font-family: 'Josefin Sans', sans-serif;
+    background: var(--background-color-1);
 
     --font-size-1: 2.25rem;
     --font-size-2: 1.75rem;
@@ -17,6 +18,8 @@
     --font-size-5: 0.75rem;
 
     --background-color-1: #2f4f4f;
+
+    --background-color-2: #51e9e9;
 
     --color-blue-1: #00abf0;
     
