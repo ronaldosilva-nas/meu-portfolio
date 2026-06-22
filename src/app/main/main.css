@@ -3,7 +3,10 @@
 .banner {
     display: flex;
     justify-content: center;
-    background: linear-gradient(180deg, var(--background-color-2) 15%, var(--background-color-1) 100%);
+    align-items: center;
+    height: 100vh;
+    /*background: linear-gradient(180deg, var(--background-color-2) 15%, var(--background-color-1) 100%);
+  */background: #ffffff;
     color: #ffffff;
     padding-top: 70px;
     text-align: center;
@@ -20,17 +23,19 @@
     margin: 15px 0;
     font-size: var(--font-size-5);
     font-weight: 400;
-    color: #ffffff;
+    color: var(--background-color-1);
 }
 
 .banner .box .title1 {
     font-size: var(--font-size-3);
+    color: #000;
 }
 
 .banner .box .title2 {
-    font-size: var(--font-size-1);
+    font-size: 2rem;
     display: block;
     max-width: 800px;
+    color: var(--background-color-1);
 }
 
 .banner .box .buttons {
@@ -52,7 +57,7 @@
     margin: 0 5px 15px;
     font-size: var(--font-size-4);
     font-weight: 700;
-    background: var(--background-color-2);
+    background: #000;
     color: #ffffff;
 }
 .banner .box .buttons a:hover {

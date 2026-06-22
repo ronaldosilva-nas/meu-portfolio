@@ -1,6 +1,6 @@
 nav {
     box-shadow: 0 4px 17px #0000004d;
-    background: #ffffff;
+    background: var(--color-blue-1);
     position: fixed;
     width: 100%;
     display: flex;
@@ -11,7 +11,7 @@ nav {
 
 nav h1 {
     font-size: var(--font-size-4);
-    color: var(--color-blue-1);
+    color: #000;
     margin-right: auto;
 }
 
@@ -23,7 +23,7 @@ nav ul {
     list-style: none;
     position: absolute;
     top: 70px;
-    background: #ffffff;
+    background: var(--color-blue-1);
     width: 100%;
 }
 
@@ -45,7 +45,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    color: var(--color-blue-1);
+    color: #fff;
 }
 
 nav i {
@@ -62,7 +62,7 @@ nav i {
 
     nav h1 {
         font-size: var(--font-size-4);
-        color: var(--color-blue-1);
+        color: #000;
         padding-left: 250px;
     }
 
