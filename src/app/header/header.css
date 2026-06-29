@@ -1,3 +1,7 @@
+/* ==========================
+   NAVEGAÇÃO
+========================== */
+
 nav {
     box-shadow: 0 4px 17px #0000004d;
     background: var(--color-blue-1);
@@ -5,7 +9,6 @@ nav {
     width: 100%;
     display: flex;
     align-items: center;
-    justify-content: right;
     height: 70px;
 }
 
@@ -53,6 +56,10 @@ nav i {
     font-size: 45px;
     cursor: pointer;
 }
+
+/* ==========================
+   RESPONSIVO
+========================== */
 
 @media (min-width: 768px) {
 

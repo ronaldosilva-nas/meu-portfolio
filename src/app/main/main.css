@@ -1,13 +1,13 @@
-/* box banner */
+/* ==========================
+   BANNER
+========================== */
 
 .banner {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
-    /*background: linear-gradient(180deg, var(--background-color-2) 15%, var(--background-color-1) 100%);
-  */background: #ffffff;
-    color: #ffffff;
+    background: #ffffff;
     padding-top: 70px;
     text-align: center;
 }
@@ -19,11 +19,29 @@
     padding: 45px 5px;
 }
 
-.banner .box .paragraph {
-    margin: 15px 0;
-    font-size: var(--font-size-5);
-    font-weight: 400;
-    color: var(--background-color-1);
+.banner .mobile-image {
+    display: block;
+    width: 130px;
+    height: 130px;
+    animation: fadeInDown .8s ease;
+}
+
+@keyframes fadeInDown {
+
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+}
+
+.banner .banner-image {
+    display: none;
 }
 
 .banner .box .title1 {
@@ -37,6 +55,17 @@
     max-width: 800px;
     color: var(--background-color-1);
 }
+
+.banner .box .paragraph {
+    margin: 15px 0;
+    font-size: var(--font-size-5);
+    font-weight: 400;
+    color: var(--background-color-1);
+}
+
+/* ==========================
+   BOTÕES
+========================== */
 
 .banner .box .buttons {
     display: flex;
@@ -60,6 +89,25 @@
     background: #000;
     color: #ffffff;
 }
+
 .banner .box .buttons a:hover {
     background: var(--color-blue-1);
 }
+
+/* ==========================
+   RESPONSIVO
+========================== */
+
+@media (min-width: 768px) {
+
+    .banner .banner-image {
+        display: block;
+        width: 400px;
+        height: 400px;
+    }
+
+    .banner .mobile-image {
+        display: none;
+    }
+    
+}    
