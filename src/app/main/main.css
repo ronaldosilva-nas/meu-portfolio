@@ -1,5 +1,5 @@
 /* ==========================
-   BANNER
+          BANNER
 ========================== */
 
 .banner {
@@ -46,7 +46,7 @@
 
 .banner .box .title1 {
     font-size: var(--font-size-3);
-    color: #000;
+    color: var(--color-blue-1);
 }
 
 .banner .box .title2 {
@@ -62,10 +62,6 @@
     font-weight: 400;
     color: var(--background-color-1);
 }
-
-/* ==========================
-   BOTÕES
-========================== */
 
 .banner .box .buttons {
     display: flex;
@@ -95,7 +91,7 @@
 }
 
 /* ==========================
-   RESPONSIVO
+          DESKTOP BANNER
 ========================== */
 
 @media (min-width: 768px) {
@@ -110,4 +106,102 @@
         display: none;
     }
     
-}    
+}
+
+
+/* ==========================
+          ABOUT
+========================== */
+
+.about {
+    padding: 100px 20px;
+}
+
+.about .box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.about .about-image {
+    display: none;
+}
+
+.about .text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.about .text h2 {
+    font-size: var(--font-size-3);
+    color: var(--color-blue-1);
+    margin-bottom: 10px;
+}
+
+.about .text h3 {
+    font-size: var(--font-size-4);
+    color: #000;
+    margin-bottom: 25px;
+}
+
+.about .text p {
+    font-size: var(--font-size-5);
+    line-height: 1.8;
+    margin-bottom: 20px;
+    font-weight: 400;
+    color: var(--background-color-1);
+    text-align: justify;
+}
+
+.about .text a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 20px;
+    border-radius: 35px;
+    background: #000;
+    color: #fff;
+    font-weight: 400;
+    transition: .3s;
+}
+
+.about .text a:hover {
+    background: var(--color-blue-1);
+}
+
+
+/* ==========================
+          DESKTOP ABOUT
+========================== */
+
+@media (min-width: 768px) {
+
+    .about .box {
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 60px;
+    }
+
+    .about .about-image {
+        display: block;
+        flex: 1;
+        text-align: center;
+    }
+
+    .about .about-image img {
+        width: 100%;
+        max-width: 300px;
+        border-radius: 50%;
+        box-shadow: 0 15px 35px rgba(0,0,0,.15);
+        object-fit: cover;
+    }
+
+    .about .text {
+        flex: 2;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
